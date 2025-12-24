@@ -1,0 +1,39 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+
+linter:
+  rules:
+    always_use_package_imports: true
+    avoid_print: true
+    avoid_dynamic_calls: true
+    prefer_const_constructors: true
+    prefer_final_locals: true
+    require_trailing_commas: true
+    avoid_unnecessary_containers: true
+
+dcm:
+  extends:
+    - recommended
+
+  pubspec-rules:
+    - avoid-any-version
+    - avoid-dependency-overrides
+    - prefer-pinned-version-syntax
+    - pubspec-ordering
+
+  rules:
+    - always-remove-listener
+    - avoid-empty-setstate
+    - avoid-flexible-outside-flex
+    - proper-super-calls
+    - use-setstate-synchronously
+    - avoid-read-inside-build
+    - avoid-watch-outside-build
+    - avoid-unused-parameters
+    - avoid-redundant-async
+    - prefer-trailing-comma
+    - newline-before-return
